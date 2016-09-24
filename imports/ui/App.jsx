@@ -12,7 +12,18 @@ class App extends Component {
       <Task key={task._id} task={task} />
     ));
   }
-...some lines skipped...
+
+  render() {
+    return (
+      <div className="container">
+        <header>
+          <h1>Todo List</h1>
+        </header>
+
+        <ul>
+          {this.renderTasks()}
+        </ul>
+      </div>
     );
   }
 }
